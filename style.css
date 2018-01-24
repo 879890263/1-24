@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.box{
+    width: 500px;
+   
+   
+    margin: 0 auto; 
+}
+ul{
+    width: 100%;
+    height: 60px;
+    
+}
+ul li{
+    float: left;
+   width: 98px;
+    height: 60px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 60px;
+    color:#f60;
+    border: 1px solid #ccc;
+  
+}
+
+ol{
+    width: 100%;
+  
+
+
+}
+ol li{
+    width: 498px;
+    height: 300px;
+    border:1px solid #ccc;
+    font-size: 30px;
+    line-height: 300px;
+    text-align: center;
+    color:#f60;
+    display: none;
+    
+}
+.dcolor{
+    background: #f60;
+    color:white;
+}
+
+.dshow{
+    display: block;
+}

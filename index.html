@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li>111</li>
+            <li>222</li>
+            <li>333</li>
+            <li>444</li>
+            <li>555</li>
+        </ul>
+        <ol>
+            <li>111</li>
+            <li>222</li>
+            <li>333</li>
+            <li>444</li>
+            <li>555</li>
+        </ol>
+    </div>
+    <script>
+                                                                                                                               
+        class Tabs{
+            constructor(){
+                this.ull=document.getElementsByTagName('ul')[0]
+                console.log(this.ull)
+                this.uli=this.ull.getElementsByTagName('li')
+                this.oll=document.getElementsByTagName('ol')[0]
+                this.oli=this.oll.getElementsByTagName('li')
+                this.init()
+
+            }
+            init(){
+                this.mydata()
+               
+
+            }
+            mydata(){
+                
+                this.uli[0].className="dcolor";
+                this.oli[0].className="dshow";
+                 [...this.uli].map((res,index)=>{
+                     res.onclick=()=>{                       
+                        [...this.uli].map((dat,ind)=>{
+                            dat.className=""
+                            this.oli[ind].className=""
+                        })
+                          res.className="dcolor"
+                          this.oli[index].className="dshow"
+                        }
+                  })
+                }
+              }
+        new Tabs()
+    </script>
+</body>
+</html>
